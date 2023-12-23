@@ -1,13 +1,13 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: "Lang's portfolio",
+  title: "Suomi Navigation",
   author: "Tang Lang",
-  headerTitle: "Lang's personal website",
+  headerTitle: "Userful finland websites",
   description: "A website created with Next.js and Tailwind.css",
   language: "en-us",
-  theme: "system", // system, dark or light
-  siteUrl: "https://langtang.vercel.app/",
-  siteRepo: "https://github.com/fansize/suomi-nav",
+  theme: "system",
+  siteUrl: "https://suomi.vercel.app/",
+  siteRepo: "https://github.com/fansize/suomi",
   siteLogo: "/verscel.svg",
   socialBanner: "",
   mastodon: "https://mastodon.social/@mastodonuser",
