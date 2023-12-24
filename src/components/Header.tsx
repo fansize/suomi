@@ -10,15 +10,18 @@ export default function Header() {
       <div>
         <Link href="/">
           <div className="flex items-center justify-between">
-            <div className="mr-3">
+            <div className="mr-2">
               <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className="dark:invert"
-                width={100}
-                height={24}
+                src="/moomin.svg"
+                alt="Moomin logo"
+                width={80}
+                height={80}
                 priority
               />
+            </div>
+            <div className="flex flex-col gap-1 mt-4">
+              <h3 className="text-2xl font-bold">Finland Web Directory</h3>
+              <p className="font-medium tracking-wide">芬兰生活指南101</p>
             </div>
           </div>
         </Link>

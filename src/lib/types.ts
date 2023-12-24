@@ -1,5 +1,5 @@
 export type SiteProps = {
-  id: string;
+  id: number;
   title: string;
   description: string | null;
   href: string;
