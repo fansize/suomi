@@ -6,3 +6,16 @@ export type SiteProps = {
   icon: string | null;
   tags: string[];
 };
+
+
+export type Museum = {
+  id: number;
+  name: string;
+  address: string;
+  website: string;
+  closed: string;
+  regular_ticket: number;
+  discounted_ticket: number;
+  free_entry: string;
+  museum_card: boolean;
+};
