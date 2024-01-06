@@ -7,7 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
+import Link from "next/link";
 import { Museum } from "@/lib/types";
 
 export default function MuseumTable({ museums }: { museums: Museum[] }) {
@@ -15,22 +15,22 @@ export default function MuseumTable({ museums }: { museums: Museum[] }) {
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead>Name</TableHead>
-          <TableHead>Address</TableHead>
-          <TableHead>Website</TableHead>
-          <TableHead>Closed</TableHead>
-          <TableHead>Regular Ticket</TableHead>
-          <TableHead>Discounted Ticket</TableHead>
-          <TableHead>Free Entry</TableHead>
-          <TableHead>Museum Card</TableHead>
+          <TableHead>博物馆</TableHead>
+          <TableHead className="">地址</TableHead>
+          <TableHead>闭馆</TableHead>
+          <TableHead>常规票价</TableHead>
+          <TableHead>折扣票</TableHead>
+          <TableHead>免票</TableHead>
+          <TableHead>博物馆卡</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
         {museums.map((museum) => (
           <TableRow key={museum.id}>
-            <TableCell>{museum.name}</TableCell>
-            <TableCell>{museum.address}</TableCell>
-            <TableCell>{museum.website}</TableCell>
+            <TableCell>
+              <Link href={museum.website}>{museum.name}</Link>
+            </TableCell>
+            <TableCell className="">{museum.address}</TableCell>
             <TableCell>{museum.closed}</TableCell>
             <TableCell>{`€${museum.regular_ticket}`}</TableCell>
             <TableCell>{`€${museum.discounted_ticket}`}</TableCell>
