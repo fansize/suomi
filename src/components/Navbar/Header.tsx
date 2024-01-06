@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import NavbarLinks from "@/components/Navbar/NavbarLinks";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
@@ -10,7 +12,7 @@ export default function Header() {
       <div>
         <Link href="/">
           <div className="flex items-center justify-between">
-            <div className="mr-2">
+            <div className="mr-2 hidden sm:flex">
               <Image
                 src="/moomin.svg"
                 alt="Moomin logo"
@@ -26,8 +28,18 @@ export default function Header() {
           </div>
         </Link>
       </div>
-      <div className="flex items-center justify-end">
-        <ThemeSwitch />
+
+      <div className="flex items-center space-x-4 justify-end">
+        <div className="hidden sm:flex">
+          <NavbarLinks />
+        </div>
+        <Button
+          variant="outline"
+          size="icon"
+          className="h-9 w-9 bg-background p-1 shadow-sm"
+        >
+          <ThemeSwitch />
+        </Button>
       </div>
     </header>
   );
