@@ -1,6 +1,7 @@
 import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { inter, finlandica } from "@/lib/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
 import siteMetadata from "@/data/siteMetadata";
@@ -87,6 +88,7 @@ export default function RootLayout({
               <main className="mb-auto">
                 {children}
                 <Analytics />
+                <SpeedInsights />
               </main>
               <Footer />
             </div>

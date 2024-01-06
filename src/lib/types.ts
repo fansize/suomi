@@ -7,7 +7,6 @@ export type SiteProps = {
   tags: string[];
 };
 
-
 export type Museum = {
   id: number;
   name: string;
