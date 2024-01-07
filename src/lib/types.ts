@@ -10,6 +10,7 @@ export type SiteProps = {
 export type Museum = {
   id: number;
   name: string;
+  city: string;
   address: string;
   website: string;
   closed: string;
