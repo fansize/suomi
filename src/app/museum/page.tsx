@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 export default function Page() {
   return (
     <div className="mx-auto max-w-full px-8">
-      {/* <Hero /> */}
+      <Hero />
       <div className="mt-12">
         <MuseumTable museums={museumsData_cn} />
       </div>

@@ -21,7 +21,7 @@ export default function NavbarLinks() {
 
       <MenubarMenu>
         <MenubarTrigger>
-          <Link href="/museum">Museums</Link>
+          <Link href="/museum">Museum</Link>
         </MenubarTrigger>
       </MenubarMenu>
     </Menubar>

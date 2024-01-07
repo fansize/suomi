@@ -6,6 +6,7 @@ import { inter, finlandica } from "@/lib/fonts";
 import { ThemeProvider } from "@/components/theme-provider";
 import siteMetadata from "@/data/siteMetadata";
 import SectionContainer from "@/components/SectionContainer";
+import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/Navbar/Header";
 import Footer from "@/components/Footer";
 
@@ -87,6 +88,7 @@ export default function RootLayout({
               <Header />
               <main className="mb-auto">
                 {children}
+                <Toaster />
                 <Analytics />
                 <SpeedInsights />
               </main>
