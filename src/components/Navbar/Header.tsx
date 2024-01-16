@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="flex items-center justify-between py-6">
       <div>
         <Link href="/">
           <div className="flex items-center justify-between">
@@ -30,13 +30,12 @@ export default function Header() {
       </div>
 
       <div className="flex items-center space-x-4 justify-end">
-        <div className="hidden sm:flex">
-          <NavbarLinks />
-        </div>
+        <NavbarLinks />
+
         <Button
           variant="outline"
           size="icon"
-          className="h-9 w-9 bg-background p-1 shadow-sm"
+          className="h-9 w-9 bg-background p-1 shadow-sm hidden lg:flex md:flex"
         >
           <ThemeSwitch />
         </Button>

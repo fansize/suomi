@@ -156,4 +156,12 @@ export const eventWebsiteData: SiteProps[] = [
     description: "芬兰站Ticketmaster, 有演唱会、体育赛事等",
     href: "https://www.ticketmaster.fi/",
   },
+  {
+    id: 34,
+    icon: "/images/lippu.png",
+    tags: ["有英文"],
+    title: "Lippu",
+    description: "芬兰本土票务平台, 包括演唱会、体育赛事等",
+    href: "https://www.lippu.fi/en/",
+  },
 ];

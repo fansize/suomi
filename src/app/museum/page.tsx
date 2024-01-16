@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-full px-8">
+    <div className="mx-auto max-w-full">
       <Hero />
       <div className="mt-12">
         <MuseumTable museums={museumsData_cn} />

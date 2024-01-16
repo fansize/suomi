@@ -84,7 +84,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SectionContainer>
-            <div className="flex h-screen flex-col justify-between">
+            <div className="flex h-screen flex-col justify-between px-6">
               <Header />
               <main className="mb-auto">
                 {children}

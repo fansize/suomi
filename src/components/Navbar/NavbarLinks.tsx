@@ -15,13 +15,13 @@ export default function NavbarLinks() {
     <Menubar>
       <MenubarMenu>
         <MenubarTrigger>
-          <Link href="/">Directory</Link>
+          <Link href="/">网站导航</Link>
         </MenubarTrigger>
       </MenubarMenu>
 
       <MenubarMenu>
         <MenubarTrigger>
-          <Link href="/museum">Museum</Link>
+          <Link href="/museum">博物馆</Link>
         </MenubarTrigger>
       </MenubarMenu>
     </Menubar>
