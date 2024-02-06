@@ -44,7 +44,7 @@ const screenshots: Screenshot[] = [
     image: "/screenshot/sbank/transfer_step_5.png",
   },
   {
-    title: "转账单",
+    title: "6.确认转账",
     image: "/screenshot/sbank/transfer_step_6.png",
   },
 ]
@@ -72,7 +72,7 @@ export default function Page() {
 
       <h1 className="italic text-xl font-bold pt-8 pb-4 underline decoration-wavy decoration-sky-600">转账流程</h1>
       <div className="grid gap-x-4 gap-y-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-        {screenshots.slice(4, 9).map((screenshot) => (
+        {screenshots.slice(4, 10).map((screenshot) => (
           <div key={screenshot.title} className="flex flex-col items-center gap-2">
             <ScrollArea className="w-[300px] h-[600px] rounded-lg border p-4">
               <Image
