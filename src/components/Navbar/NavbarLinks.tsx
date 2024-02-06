@@ -24,6 +24,12 @@ export default function NavbarLinks() {
           <Link href="/museum">博物馆</Link>
         </MenubarTrigger>
       </MenubarMenu>
+
+      <MenubarMenu>
+        <MenubarTrigger>
+          <Link href="/s_bank">SBank翻译</Link>
+        </MenubarTrigger>
+      </MenubarMenu>
     </Menubar>
   );
 }

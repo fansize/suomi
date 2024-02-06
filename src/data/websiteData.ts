@@ -105,6 +105,14 @@ export const learningWebsiteData: SiteProps[] = [
 
 export const workWebsiteData: SiteProps[] = [
   {
+    id: 14,
+    icon: "/images/linkedin.ico",
+    tags: ["英文"],
+    title: "LinkedIn",
+    description: "海外还是LinkedIn上的职位更丰富，另外也可以通过联系人寻求内推",
+    href: "https://www.linkedin.com/",
+  },
+  {
     id: 15,
     icon: "/images/kuntarekry.ico",
     tags: ["部分英文"],
@@ -112,7 +120,6 @@ export const workWebsiteData: SiteProps[] = [
     description: "人才市场，包含一些市政部分、公共单位的职位",
     href: "https://www.kuntarekry.fi/en/",
   },
-
   {
     id: 16,
     icon: "/images/tyomarkkinatori.png",
