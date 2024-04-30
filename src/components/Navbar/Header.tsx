@@ -8,11 +8,11 @@ import { Button } from "@/components/ui/button";
 
 export default function Header() {
   return (
-    <header className="flex flex-col xl:flex-row items-center justify-between py-6">
+    <header className="flex flex-col  xl:flex-row items-center justify-between py-6">
       <div>
         <Link href="/">
           <div className="flex items-center justify-between">
-            <div className="mr-2 hidden sm:flex">
+            <div className="mr-2 sm:flex">
               <Image
                 src="/moomin.svg"
                 alt="Moomin logo"

@@ -94,6 +94,15 @@ export const learningWebsiteData: SiteProps[] = [
     href: "https://client.redfoxsanakirja.fi/en_US/dictionary/-/s/fin/cmn/",
   },
   {
+    id: 12,
+    icon: "/images/uusikielemme.png",
+    tags: ["有英文"],
+    title: "Uusikielemme",
+    description: "汇总了芬兰语的常用词汇，按照使用场景和难度分类",
+    href: "https://uusikielemme.fi/finnish-vocabulary#one",
+  },
+
+  {
     id: 13,
     icon: "/images/hive.ico",
     tags: ["有英文"],
@@ -170,5 +179,13 @@ export const eventWebsiteData: SiteProps[] = [
     title: "Lippu",
     description: "芬兰本土票务平台, 包括演唱会、体育赛事等",
     href: "https://www.lippu.fi/en/",
+  },
+  {
+    id: 35,
+    icon: "/images/varaamo.ico",
+    tags: ["有英文"],
+    title: "Varaamo",
+    description: "预约Espoo市政设施，比如图书馆的会议室、游戏室、排练室等",
+    href: "https://varaamo.espoo.fi/",
   },
 ];
