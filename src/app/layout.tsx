@@ -9,6 +9,7 @@ import SectionContainer from "@/components/SectionContainer";
 import { Toaster } from "@/components/ui/sonner";
 import Header from "@/components/Navbar/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -89,8 +90,11 @@ export default function RootLayout({
               <main className="mb-auto">
                 {children}
                 <Toaster />
-                <Analytics />
-                <SpeedInsights />
+                <Script
+                  src="https://umami-selfhost-dusky.vercel.app/script.js"
+                  data-website-id="d95fd20b-9151-45d0-8d53-41a64f58ce95"
+                  strategy="afterInteractive"
+                />
               </main>
               <Footer />
             </div>
