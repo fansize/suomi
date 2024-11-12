@@ -1,18 +1,13 @@
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "@/components/ui/accordion"
-   
-  export function QACard() {
-    return (
-      <div className="flex flex-col justify-start items-center">  
-        <p className="text-lg text-center tracking-wide mb-2">
-          常见问题
-        </p>
-        <div className="flex w-9/12">
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
+export function QACard() {
+  return (
+    <div className="flex flex-col justify-start items-center">
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger>博物馆卡值得买吗?</AccordionTrigger>
@@ -24,7 +19,9 @@ import {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>是所有的博物馆都有免费参观时段吗？</AccordionTrigger>
+          <AccordionTrigger>
+            是所有的博物馆都有免费参观时段吗？
+          </AccordionTrigger>
           <AccordionContent>
             不是的。少部分博物馆每周或每月有固定日期免票，还有一些是针对特定节日或者庆祝日免票。
           </AccordionContent>
@@ -36,7 +33,6 @@ import {
           </AccordionContent>
         </AccordionItem>
       </Accordion>
-      </div>
-      </div>
-    )
-  }
+    </div>
+  );
+}

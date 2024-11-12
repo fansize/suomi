@@ -30,6 +30,12 @@ export default function NavbarLinks() {
           <Link href="/s_bank">SBank翻译</Link>
         </MenubarTrigger>
       </MenubarMenu>
+
+      <MenubarMenu>
+        <MenubarTrigger>
+          <Link href="/q&a">常见问题</Link>
+        </MenubarTrigger>
+      </MenubarMenu>
     </Menubar>
   );
 }
